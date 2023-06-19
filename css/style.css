@@ -72,21 +72,22 @@ body {
 .headtext {
     margin-left: 10%;
     flex: 40%;
-    padding-top: 150px;
 }
 
 .h21 {
     color: #180f4a;
-    letter-spacing: 10px;
+    letter-spacing:10px;
     font-size: 15px;
     padding-left: 5%;
     word-spacing: 2%;
+
 }
 
 .h22 {
     font-size: 60px;
     color: #180f4a;
     padding-left: 5%;
+    padding-top: 0;
 }
 
 
@@ -208,6 +209,7 @@ footer{
     }
     
     .headtext{
+        margin-right: 10%;
         padding: 20px;
         text-align: center;
     }
@@ -238,8 +240,8 @@ footer{
         text-align:center;
     }
 
-    .headtext h2{
-        padding-top: 35px;
+    .headtext{
+        padding-top:100px;
     }
     }
 
@@ -250,7 +252,6 @@ footer{
 
     .headtext {
         text-align: left;
-        padding-top:35px;
     }
     .whatsapp{
         max-width: 5%;
