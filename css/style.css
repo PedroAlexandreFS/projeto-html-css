@@ -1,261 +1,349 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,400;1,500&display=swap');
+/*==== CONFIGURAÇÕES GERAIS ====*/
+/*---- importação da fonte ----*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #F7F7F7;
+    background: #f6f5fb;
 }
 
+/*==== MENU DE NAVEGAÇÃO ====*/
 .navbar {
     display: flex;
-    height: 100px;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+    background: #f6f5fb;
     width: 100%;
-    background: #F7F7F7;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    font-family: "Lobster", sans-serif;
 }
 
-
-
-.logo {
-    flex: 20;
+.Logo {
+    flex: 20%;
     text-align: center;
     margin-left: 10%;
+
 }
 
-.logo h1 {
-    font-family: 'Lobster', cursive;
-    color: #180f4a;
-    font-size: 34px;
+
+.Logo h1 {
+    color: #180f4A;
+    padding-top: 50px;
 }
 
-.menu {
-    flex: 80;
-    text-align: right;
-    padding: 15px;
+
+.Links {
+    flex: 70%;
+    text-align: end;
+    padding: 50px;
+
 }
 
-.menu a {
+.Links a {
     text-decoration: none;
-    padding: 20px 16px;
-    color: #180f4a;
-    font-size: 20px;
+    font-size: 22px;
+    color: #180f4A;
+    margin-left: 50px;
+    padding: 5px 15px 5px 15px;
+    transition: all 0.2s ease;
 }
 
-.menu a:hover {
+.Links a:hover {
     color: #ff2978;
-    border-top: 4px solid #180f4a;
+    border-top: 2px solid #180f4A;
 }
 
-#support {
-    background: #180f4a;
-    color: #ffff;
-    padding: 10px 30px;
-    border-radius: 5px;
-    margin-right: 15%;
-
-}
-
-#support:hover {
-    border: 3px solid #180f4a;
-}
-
-.head {
-    display: flex;
-    height: auto;
-    flex-flow: row wrap;
-
-    justify-content: center;
-}
-
-.headtext {
-    margin-left: 10%;
-    flex: 40%;
-}
-
-.h21 {
-    color: #180f4a;
-    letter-spacing:10px;
-    font-size: 15px;
-    padding-left: 5%;
-    word-spacing: 2%;
-
-}
-
-.h22 {
-    font-size: 60px;
-    color: #180f4a;
-    padding-left: 5%;
-    padding-top: 0;
-}
-
-
-
-.p2 {
-    padding-bottom: 10px;
-}
-
-.contact-btn {
-    display: inline-block;
-    background: #ff2978;
-    padding: 20px;
+#botao {
+    background-color: #180f4A;
     color: white;
     border-radius: 5px;
-    text-decoration: none;
+    transition: all 0.4s ease;
 }
 
-.contact-btn:hover {
-    background: #180f4a;
-    border: 3px solid #180f4a;
+#botao:hover {
+    border: none;
+    background: #ff2978;
 }
 
-.headimg {
-    margin-right: 10%;
-    flex: 40%;
-    text-align: center;
-}
-
-.headimg img {
-    max-width: 100%;
-    height: 500px;
-
-}
-
-
-.titlemain {
-    text-align: center;
-    color: #180f4a;
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
-}
-
+/*==== CONTEUDO PRINCIPAL ====*/
 .conteudo {
-    padding-top:75px;
-    display:flex;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 50px;
+    height: 500px;
+}
+
+.texto {
+    margin-top: 20%;
+    flex: 40%;
+    margin-left: 10%;
+
+}
+
+.texto h2 {
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    letter-spacing: 15px;
+    color: #180f4A;
+    font-size: 20px;
+}
+
+.destaque {
+    letter-spacing: 11px;
+    display: block;
+    font-size: 60px;
+}
+
+.texto p {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+#botao2 {
+    background: #ff2978;
+    color: white;
+    padding: 15px 20px 20px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+#botao2:hover {
+    background: #180f4A;
+}
+
+/* ==== AREA IMAGE ==== */
+
+.imageareaa {
+    flex: 60%;
     flex-flow: row wrap;
 }
 
-.card-pc,.card-cell,.card-mark{
-    flex: 33;
-    border: 2px solid #ff2978;
+.image {
+    margin-top: 40%;
+    height: 350px;
+}
+
+/*==== AREA DE CARDS ====*/
+
+.tituloCards {
+    flex: 100%;
+    flex-flow: row wrap;
+    text-align: center;
+    margin-top: 10%;
+    color: #180f4A;
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.conteinerCards {
+    display: flex;
+    flex-flow: row;
+}
+
+.Card {
+    text-align: center;
+    border: 1px solid #ff2978;
     border-radius: 5px;
-    color: #180f4a;
-    text-align: center;
+    flex: 30%;
     padding: 20px;
-    margin: 5%;
+    margin: 50px;
+    transition: all 0.2s ease;
 }
 
-
-
-.icon {
-    max-width:40%;
-    padding: 20px;
-    margin: 0 50px 0 50px;
-
+.Card:hover {
+    background-color: #180f4A;
 }
 
+.Card:hover * {
+    color: white;
+}
 
-h3 {
+.imagem {
+    height: 100px;
     padding: 20px;
-    color: #180f4a;
+}
+
+.Card h3 {
     font-size: 20px;
+    font-family: "Lobster", sans-serif;
+    color: #180f4A;
+    padding: 20px;
+}
+
+.Card p {
+    color: #180f4A;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ==== RODAPE ==== */
+footer {
+    border-top: 4px solid #ff2978;
+    background: linear-gradient(to top, #0c0726, #251677);
     text-align: center;
+    height: 200px;
 }
 
-.card-pc:hover,.card-cell:hover,.card-mark:hover{
-    background:#180f4a;
-    border: 3px solid #180f4a;
+footer h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+    font-family: "Lobster", sans-serif;
 }
 
-.card-pc:hover p,.card-cell:hover p,.card-mark:hover p,.card-pc:hover h3,.card-cell:hover h3,.card-mark:hover h3 {
-    color: #F7F7F7;
+.textowhite {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
 }
 
-p {
-  color: #180f4a;
+#texto {
+    padding-top: 80px;
 }
 
-.titlefooter,.textfooter{
-    color: #F7F7F7;
-    text-align: center;
-}
+/*==== RESPONSIVIDADE ==== */
 
-.titlefooter{
-    font-family: 'Lobster', cursive;
-    padding-top: 40px;
-}
-
-footer{
-    border-top:5px solid #ff2978;
-   background-image:linear-gradient(black,#180f4a);
-   height: 150px;
-}
-
-.whatsapp{
-    max-width: 10%;
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-}
-
-.whatsapp:hover{
-  scale:90%;
-}
-
+/* Smartphones (600px para baixo) */
 @media only screen and (max-width: 600px) {
-    .navbar{
+    .navbar {
         display: none;
     }
-    
-    .headtext{
-        margin-right: 10%;
-        padding: 20px;
+
+    .Links a {
+        padding: 0;
+    }
+
+    #botao {
+        margin: 100px;
+    }
+
+    .conteudo {
+        text-align: center;
+        margin: 30px;
+
+    }
+
+    .texto h2 {
         text-align: center;
     }
-    
+
+    .imageareaa {
+        text-align: center;
+    }
+
+    .tituloCards {
+        margin-top: 200px;
+    }
+
+
+    .conteinerCards {
+        flex-flow: column;
+    }
+
+    .image {
+        margin-top: 20px;
+        height: 250px;
+        max-width: 100%;
+        display: block;
+        margin-left: 40px;
+        margin-right: auto;
+    }
+
+    .conteinerCards {
+        flex-flow: column;
+        margin-top: 20px;
+    }
 }
 
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 600px) {
-    .navbar{
-        display: none;
+
+    .Links a {
+        padding: 0;
     }
-    
-    .headtext{
-        padding: 20px;
-        text-align: center;
+
+    #botao {
+        margin: 100px;
     }
-    
-    .headimg{
-    max-width: auto;
-    margin: 25px;
+
+    .conteinerCards {
+        display: flex;
+        flex-flow: column;
     }
-    
+
+
+    .image {
+        height: 120px;
+        max-width: 100%;
+        display: block;
+        margin-top: 100%;
+        margin-left: 40px;
+    }
+
+    .conteinerCards {
+        margin-top: 20px;
+    }
+
 }
 
+/* Dispostivos Médios (Tablets deitados, 768px para cima) */
 @media only screen and (min-width: 768px) {
 
-    .navbar{
-        display:inline-block;
-        text-align:center;
+
+
+    .image {
+        height: px;
+        max-width: 100%;
+        display: block;
+        margin-top: 50%;
+        margin-left: 40px;
     }
 
-    .headtext{
-        padding-top:100px;
-    }
-    }
-
-@media only screen and (min-width: 992px) {
-    .navbar{
-        display:flex;
+    .conteinerCards {
+        margin-top: 20px;
+        flex-flow: column;
     }
 
-    .headtext {
-        text-align: left;
-    }
-    .whatsapp{
-        max-width: 5%;
-    }
 }
 
 
+
+
+
+
+
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+    .conteinerCards {
+        display: flex;
+        flex-flow: row;
+    }
+
+
+    .image {
+        height: 250px;
+        max-width: 100%;
+        display: block;
+        margin-left: 40px;
+        margin-right: auto;
+        /* centraliza */
+    }
+
+    .conteinerCards {
+        margin-top: 20px;
+    }
+
+}
