@@ -1,7 +1,7 @@
-/*==== CONFIGURAÇÕES GERAIS ====*/
 /*---- importação da fonte ----*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+/*==== CONFIGURAÇÕES GERAIS ====*/
 * {
     padding: 0;
     margin: 0;
@@ -299,11 +299,7 @@ footer h2 {
 
 /* Dispostivos Médios (Tablets deitados, 768px para cima) */
 @media only screen and (min-width: 768px) {
-
-
-
     .image {
-        height: px;
         max-width: 100%;
         display: block;
         margin-top: 50%;
@@ -316,13 +312,6 @@ footer h2 {
     }
 
 }
-
-
-
-
-
-
-
 
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
 @media only screen and (min-width: 992px) {
@@ -339,7 +328,6 @@ footer h2 {
         display: block;
         margin-left: 40px;
         margin-right: auto;
-        /* centraliza */
     }
 
     .conteinerCards {
