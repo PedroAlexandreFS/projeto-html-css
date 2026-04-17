@@ -25,7 +25,7 @@ body {
     font-family: "Lobster", sans-serif;
 }
 
-.Logo {
+.logo {
     flex: 20%;
     text-align: center;
     margin-left: 10%;
@@ -33,20 +33,20 @@ body {
 }
 
 
-.Logo h1 {
+.logo h1 {
     color: #180f4A;
     padding-top: 50px;
 }
 
 
-.Links {
+.links {
     flex: 70%;
     text-align: end;
     padding: 50px;
 
 }
 
-.Links a {
+.links a {
     text-decoration: none;
     font-size: 22px;
     color: #180f4A;
@@ -55,7 +55,7 @@ body {
     transition: all 0.2s ease;
 }
 
-.Links a:hover {
+.links a:hover {
     color: #ff2978;
     border-top: 2px solid #180f4A;
 }
@@ -82,7 +82,7 @@ body {
 
 .texto {
     margin-top: 20%;
-    flex: 40%;
+    flex: 30%;
     margin-left: 10%;
 
 }
@@ -123,19 +123,19 @@ body {
 
 /* ==== AREA IMAGE ==== */
 
-.imageareaa {
-    flex: 60%;
+.imagearea{
+    flex: 40%;
     flex-flow: row wrap;
 }
 
 .image {
-    margin-top: 40%;
-    height: 350px;
+    margin-top:20%;
+    height: 250px;
 }
 
 /*==== AREA DE CARDS ====*/
 
-.tituloCards {
+.titulocards {
     flex: 100%;
     flex-flow: row wrap;
     text-align: center;
@@ -146,12 +146,12 @@ body {
     letter-spacing: 2px;
 }
 
-.conteinerCards {
+.conteinerards {
     display: flex;
     flex-flow: row;
 }
 
-.Card {
+.card {
     text-align: center;
     border: 1px solid #ff2978;
     border-radius: 5px;
@@ -161,11 +161,11 @@ body {
     transition: all 0.2s ease;
 }
 
-.Card:hover {
+.card:hover {
     background-color: #180f4A;
 }
 
-.Card:hover * {
+.card:hover * {
     color: white;
 }
 
@@ -174,14 +174,14 @@ body {
     padding: 20px;
 }
 
-.Card h3 {
+.card h3 {
     font-size: 20px;
     font-family: "Lobster", sans-serif;
     color: #180f4A;
     padding: 20px;
 }
 
-.Card p {
+.card p {
     color: #180f4A;
     font-size: 15px;
     font-weight: bold;
@@ -220,7 +220,7 @@ footer h2 {
         display: none;
     }
 
-    .Links a {
+    .links a {
         padding: 0;
     }
 
@@ -238,16 +238,16 @@ footer h2 {
         text-align: center;
     }
 
-    .imageareaa {
+    .imagearea {
         text-align: center;
     }
 
-    .tituloCards {
+    .titulocards {
         margin-top: 200px;
     }
 
 
-    .conteinerCards {
+    .conteinercards {
         flex-flow: column;
     }
 
@@ -260,7 +260,7 @@ footer h2 {
         margin-right: auto;
     }
 
-    .conteinerCards {
+    .conteinercards {
         flex-flow: column;
         margin-top: 20px;
     }
@@ -269,7 +269,7 @@ footer h2 {
 /* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
 @media only screen and (min-width: 600px) {
 
-    .Links a {
+    .links a {
         padding: 0;
     }
 
@@ -277,21 +277,21 @@ footer h2 {
         margin: 100px;
     }
 
-    .conteinerCards {
+    .conteinercards {
         display: flex;
         flex-flow: column;
     }
 
 
     .image {
-        height: 120px;
+        height: 200px;
         max-width: 100%;
         display: block;
         margin-top: 100%;
         margin-left: 40px;
     }
 
-    .conteinerCards {
+    .conteinercards {
         margin-top: 20px;
     }
 
@@ -299,14 +299,20 @@ footer h2 {
 
 /* Dispostivos Médios (Tablets deitados, 768px para cima) */
 @media only screen and (min-width: 768px) {
-    .image {
+
+    .texto{
+        flex: 50%;
+    }
+
+    .imagearea .image {
         max-width: 100%;
         display: block;
         margin-top: 50%;
         margin-left: 40px;
+        height: 260px;
     }
 
-    .conteinerCards {
+    .conteinercards {
         margin-top: 20px;
         flex-flow: column;
     }
@@ -316,7 +322,7 @@ footer h2 {
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
 @media only screen and (min-width: 992px) {
 
-    .conteinerCards {
+    .conteinercards {
         display: flex;
         flex-flow: row;
     }
@@ -330,7 +336,7 @@ footer h2 {
         margin-right: auto;
     }
 
-    .conteinerCards {
+    .conteinercards {
         margin-top: 20px;
     }
 
