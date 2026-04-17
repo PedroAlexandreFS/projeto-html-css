@@ -1,6 +1,6 @@
 # REFAZENDO O PROJETO
 
-voltando a estudar depoid muito tempo
+voltando a estudar depois de muito tempo
 
 # TECNOLOGIAS
 nesse projeto usei as tecnologias
