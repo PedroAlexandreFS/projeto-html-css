@@ -41,9 +41,9 @@ Foi usado **Media Queries** se adaptando para
 
 
 
- # Deploy
-Este projeto pode ser visualizado no **GitHub Pages**:  
-[Link para o site](https://github.com/PedroAlexandreFS/projeto-html-css)
+. Clone este repositório:
+   ````bash
+   git clone https://github.com/PedroAlexandreFS/projeto-html-css
 
 Feito por pedroAlexandreFS
 
