@@ -1,17 +1,50 @@
-# REFAZENDO O PROJETO
+# REFAZENDO O PROJETO FAKE AGÊNCIA
 
-voltando a estudar depois de muito tempo
+Projeto de estudo em **HTML e CSS** para praticar estrutura semântica, estilização e responsividade.  
+Este site simula uma agência digital fictícia, com menu de navegação, cabeçalho, cards de serviços e rodapé estilizado.
 
 # TECNOLOGIAS
 nesse projeto usei as tecnologias
 
--- HTML
--- CSS
+- HTML5
+- CSS3 (Flexbox, Media Queries, Transições)
+- Google Fonts
 
-# OBJETIVO
-tentei usar mais display flex e responsividade
+#FUNÇÔES
+-Menu de navegação Fixa
+-Cards de serviço
+-botões com transição suave
+-responsividade para diferentes tela
+
+# REPONSIVIDADE
+
+Foi usado **Media Queries** se adaptando para
+
+-Celular
+-Tablete
+-Desktops
+
+#ESTRUTURA DO PRPJETO
+/
+├── index.html
+├── css/
+│   └── style.css
+└── img/
+├── pc.png
+├── apps.png
+├── marketing.png
+└── social-media-5187243_1280.png
+
 
 # DEMOSTRAÇAO
 ![Imagem de demostração](img/Captura%20de%20tela%202026-04-15%20182448.png)
+
+
+
+ # Deploy
+Este projeto pode ser visualizado no **GitHub Pages**:  
+[Link para o site](https://github.com/PedroAlexandreFS/projeto-html-css)
+
+Feito por pedroAlexandreFS
 
 
